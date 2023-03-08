@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from html.softtechitltd.com/khadyo/khadyo/homepage4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Mar 2022 04:46:18 GMT -->
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title>Home 4 - HTML 5 Template</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href='{% static "favicon.png" %}'>
+
+    <!-- CSS Files -->
+    
+    <style>
+        .signup-w3ls {
+    width: 50%;
+    margin: 70px 25% 80%;
+    padding: 0;
+    display: table;
+    position: relative;
+}
+.signup-agile1{
+    width:100%;
+    float:center;
+}
+
+.signup-w3ls .signup-agile1 .form-control {
+    margin-bottom: 20px;
+}
+label.header {
+    font-size: 16px;
+    font-weight: 500;
+    width: 215px;
+    color: grey;
+    margin-right:10px;
+    text-align:justify;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+input#image,input#store_name, input#store_type,input#owner_type, input#website,input#contact_number,input#contact_email {
+    padding:0 40px;
+    width:40%;
+    height:55px;
+    border: 1px solid #dadada;
+    color: grey;
+    text-align:justify;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight:normal;
+    font-family: 'Muli', sans-serif;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -o-border-radius:30px;
+    -ms-border-radius:30px; 
+}
+input#image:focus,input#store_name:focus, input#store_type:focus,input#owner_type:focus, input#website:focus,input#contact_number:focus,input#contact_email:focus  {
+    background-color:#f5f8fa !important;
+    border:1px solid #dadada;
+}
+input::-webkit-input-placeholder {
+color: grey;
+} 
+input:-moz-placeholder { /* Firefox 18- */
+color: grey;  
+} 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: grey;  
+} 
+input:-ms-input-placeholder {  
+color: grey;  
+}
+.register {
+    background-color: lightgreen;
+    width: 52%;
+    height: 55px;
+    border: none;
+    margin-left: 233px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    -ms-border-radius: 30px;
+    font-family: 'Muli', sans-serif;
+}   
+.register:hover {
+    background-color:#36b051;
+    color:#fff;
+}
+        </style>
+</head>
+
+<body>
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    
+
+
+    <div class="signup-w3ls">
+        <div class="signup-agile1">
+            <form action="{% url 'uprf' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+            
+                <div class="form-control">
+                    <label class="header">Profile Photo:</label>
+                    
+                    <input id="image" type="file" name="prf" placeholder="{{pro.user.image}}" required="" capture>
+                </div>
+                
+                <div class="form-control">
+                    <label class="header">First Name:</label>
+                    <input type="text" id="store_name" name="fnm" value="{{pro.user.first_name}}" placeholder="{{pro.user.first_name}}" title="Please enter your First Name" required="">
+                </div>
+                
+                <div class="form-control">
+                    <label class="header">Last Name:</label>
+                    <input type="text" id="store_name" name="lnm" value="{{pro.user.last_name}}" placeholder="{{pro.user.last_name}}" title="Please enter your First Name" required="">
+                </div>
+    
+                <div class="form-control">
+                    <label class="header">User Name:</label>
+                    <input type="text" id="store_name" name="unm"  value="{{pro.user.username}}" placeholder="{{pro.user.username}}" title="Please enter your First Name" required="">
+                </div>
+                <div class="form-control">
+                    <label class="header"> Email:</label>
+                    <input type="email" id="contact_email" name="eml"  value="{{pro.user.email}}" placeholder="{{pro.user.email}}" required="">
+                </div>
+                <div class="form-control">
+                    <label class="header">Address:</label>
+                    <input type="text" id="store_name" name="adr" value="{{pro.address}}" placeholder="{{pro.address}}" title="Please enter your First Name" required="">
+                </div>
+                <div class="form-control">
+                    <label class="header">City:</label>
+                    <input type="text" id="store_name" name="ct" value="{{pro.city}}" placeholder="{{pro.city}}" title="Please enter your First Name" required="">
+                </div>
+
+                <div class="form-control">
+                    <label class="header">PIN CODE:</label>
+                    <input type="text" id="store_name" name="pin" value="{{pro.pincode}}" placeholder="{{pro.pincode}}" title="Please enter your First Name" required="">
+                </div>
+                <div class="form-control">
+                    <label class="header">Contact Number :</label>
+                    <input type="text" id="contact_number" name="phn" value="{{pro.cno}}" placeholder="{{pro.cno}}" required="">
+                </div>
+                <div class="form-control">
+                    <label class="header">state:</label>
+                    <input type="text" id="store_name" name="st"  value="{{pro.state}}" placeholder="{{pro.user.states}}" title="Please enter your First Name" required="">
+                </div>
+    
+                
+                
+                <input type="submit" class="register" value="Register">
+    
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="ht-footer home4-footer padding-bottom-55 padding-top-80">
+        <div class='foo4-shapes'>
+            <img class="fooshape-1 d-none d-md-block" src='{% static "assets/images/img/foo4-vec.png" %}'alt="">
+            <img class="fooshape-2 d-none d-md-block" src='{% static "assets/images/img/foo4-vec2.png" %}'alt="">
+            <img class="fooshape-3 d-none d-md-block" src='{% static "assets/images/img/foo4-vec3.png" %}'alt="">
+            <img class="fooshape-4 d-none d-md-block" src='{% static "assets/images/img/foo4-vec4.png" %}'alt="">
+        </div>
+        <div class="container">
+            <div class="ht-footer-top">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 margin-bottom-30">
+                        <div class="widget text-center text-sm-left">
+                            <h6>information</h6>
+                            <ul>
+                                <li><a href="{% url 'ab' %}">about us</a></li>
+                                <li><a href="#">delivery information</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">sales</a></li>
+                                <li><a href="#">terms & conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 margin-bottom-30">
+                        <div class="widget text-center text-sm-left">
+                            <h6>open hours</h6>
+                            <ul>
+                                <li>Monday – Friday: 9:00-20:00
+                                </li>
+                                <li>Saturday: 11:00 – 15:00</li>
+                                <li>sunfay – Friday: 9:00-20:00
+                                </li>
+                                <li>monday: 11:00 – 15:00</li>
+                                <li>tuesday: 11:00 – 15:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 margin-bottom-30">
+                        <div class="widget text-center overlay-white">
+                            <div class="logo">
+                                <img src='{% static "assets/images/logo/logo4.png" %}'alt="">
+                            </div>
+                            <h6>address </h6>
+                            <ul>
+                                <li>570 8th Ave,New York, NY 10018
+                                    United States</li>
+                            </ul>
+                            <h6 class="foo4-tel"><i class="fas fa-phone-square-alt"></i> 123-59794069</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 margin-bottom-30">
+                        <div class="widget text-center text-sm-left">
+                            <h6>newsletter</h6>
+                            <div class="newsletter newsletter-3 newsletter-4 d-flex">
+                                <form action="#">
+                                    <input type="email" placeholder="enter your email"> <button class="text-capitalize"
+                                        type="submit">send</button>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#"><img src='{% static "assets/images/img/appstore.png" %}'alt=""></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <img src='{% static "assets/images/img/googlestore.png" %}'alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ht-footer-bottom">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4 col-12">
+                        <div class="ht-copyright-area text-center text-md-left margin-top-20">
+                            <p class="mb-0">copyright @ 2022 <a href="{% url 'am' %}">khadyo</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex justify-content-center margin-top-20">
+                        <div class="social-box">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-8 margin-top-20">
+                        <div class="ht-payment">
+                            <a href="{% url 'ch' %}"> <img src='{% static "assets/images/img/payment3.png" %}'alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ToTop Button -->
+    <button class="scrollup scrollup4"><i class="fas fa-angle-up"></i></button>
+
+    <!-- Javascript Files -->
+    <script src='{% static "assets/js/vendor/jquery-2.2.4.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/bootstrap.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/jquery.meanmenu.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/jquery.magnific-popup.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/slick.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/counterup.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/countdown.js" %}'></script>
+    <script src='{% static "assets/js/vendor/waypoints.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/jquery-ui.js" %}'></script>
+    <script src='{% static "assets/js/vendor/isotope.pkgd.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/easing.min.js" %}'></script>
+    <script src='{% static "assets/js/vendor/wow.min.js" %}'></script>
+    <script src='{% static "assets/js/main.js" %}'></script>
+
+</body>
+
+
+<!-- Mirrored from html.softtechitltd.com/khadyo/khadyo/homepage4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Mar 2022 04:46:38 GMT -->
+</html>

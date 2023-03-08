@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!-- Mirrored from html.softtechitltd.com/khadyo/khadyo/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Mar 2022 04:47:25 GMT -->
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title> Erorr - HTML 5 Template</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href='{% static "favicon.png" %}'>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href='{% static "assets/css/animate.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/meanmenu.min.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/font-awsome-all.min.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/magnific-popup.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/slick.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/jquery-ui.css" %}'>
+    <link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+</head>
+
+<body>
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <!-- header-top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 d-flex flex-wrap justify-content-between">
+                        <div class="contact-box">
+                            <span> <a href="#"><i class="fas fa-phone-square-alt"></i> 123-58794069</a> </span>
+                            <span> <a href="#"><i class="fas fa-envelope-open-text"></i> supportfoodkhan@.com</a></span>
+                        </div>
+                        <div class="social-box">
+                            <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+                            <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                            <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+                            <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-bottom -->
+        <div class="header-bottom margin-top-20">
+            <div class="container position-relative">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-3">
+                        <div class="logo">
+                            <a href="{% url 'am' %}"> <img src='{% static "assets/images/logo/logo.png" %}' alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <nav id="mobile-menu">
+                            <ul class="main-menu">
+                                <li><a href="#">home <span><i class="fas fa-angle-down"></i></span></a>
+                                    <ul class="submenu">
+                                        <li><a href="{% url 'am' %}">home-1</a></li>
+                                        <li><a href="{% url 'ho2'  %}">home-2</a></li>
+                                        <li><a href="{% url 'ho3'  %}">home-3</a></li>
+                                        <li><a href="{% url 'ho4'  %}">home-4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'ab'  %}">about us</a></li>
+                                <li><a href="{% url 'me'  %}">menu</a></li>
+                                <li><a href="#">blog <span><i class="fas fa-angle-down"></i></span></a>
+                                    <ul class="submenu">
+                                        <li><a href="{% url 'bg'  %}">blog</a></li>
+                                        <li><a href="{% url 'bs'  %}">single blog</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">pages <span><i class="fas fa-angle-down"></i></span></a>
+                                    <ul class="submenu">
+                                        <li><a href="{% url 'sh' %}">checkout page</a></li>
+                                        <li><a href="{% url 'sin' %}">single dish page</a></li>
+                                        <li><a href="{% url 'fp' %}">food page</a></li>
+                                        <li><a href="{% url 'fb2' %}">food page 2</a></li>
+                                        <li><a href="{% url 'sh' %}">shopping cart page</a></li>
+                                        <li><a href="{% url 'sif' %}">single food page</a></li>
+                                        <li><a href="{% url 'ga' %}">gallery page</a></li>
+                                        <li><a href="{% url 'lo' %}">login page</a></li>
+                                        <li><a href="{% url 'si' %}">signup page</a></li>
+                                        <li><a href="{% url 'upp' %}">registration</a></li>
+                                        <li><a href="{% url 'err' %}">404 page</a></li>                                        
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'co' %}">contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-9 col-8">
+                        <div class="customer-area">
+                            <span>
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fas fa-user"></i></a>
+                            </span>
+                            <span>
+                                <a href="{% url 'sh' %}"><i class="fas fa-shopping-basket"></i></a>
+                            </span>
+                            <a href="#" class="btn">login</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile-menu -->
+                <div class="mobile-menu"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- breadcrumb-area -->
+    <div class="banner-area breadcrumb-area padding-top-120 padding-bottom-90">
+        <div class="bread-shapes">
+            <span class="b-shape-1 item-bounce"><img src='{% static "assets/images/img/5.png" %}' alt=""></span>
+            <span class="b-shape-2"><img src='{% static "assets/images/img/6.png" %}' alt=""></span>
+            <span class="b-shape-3"><img src='{% static "assets/images/img/7.png" %}' alt=""></span>
+            <span class="b-shape-4"><img src='{% static "assets/images/img/9.png" %}' alt=""></span>
+            <span class="b-shape-5"><img src='{% static "assets/images/shapes/18.png" %}' alt=""></span>
+            <span class="b-shape-6 item-animateOne"><img src='{% static "assets/images/img/7.png" %}' alt=""></span>
+        </div>
+        <div class="container padding-top-120">
+            <div class="row justify-content-center">
+                <nav aria-label="breadcrumb text-center">
+                    <h2 class="page-title">404</h2>
+                    <ol class="breadcrumb text-center">
+                        <li class="breadcrumb-item"><a href="{% url 'am' %}">Home </a>/<a href="{% url 'am' %}">pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">404 page</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- 404 area -->
+    <div class="error-area padding-top-120 padding-bottom-120">
+        <div class="error-shapes">
+            <span class="e-s-1"><img src='{% static "assets/images/shapes/16.png" %}' alt=""></span>
+            <span class="e-s-2"><img src='{% static "assets/images/img/32.png" %}' alt=""></span>
+        </div>
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="error-wrapper text-center">
+                <img class="item-bounce" src='{% static "assets/images/img/404.png" %}' alt="">
+                <a href="{% url 'am' %}" class="btn margin-top-40">go to home</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer area -->
+    <footer class="padding-top-40 padding-bottom-40">
+        <div class="fo-shapes">
+            <span class="fs-1"><img src='{% static "assets/images/gallery/26.png" %}' alt=""></span>
+            <span class="fs-2 item-animateTwo"><img src='{% static "assets/images/shapes/25.png" %}' alt=""></span>
+            <span class="fs-3 item-animateTwo"><img src='{% static "assets/images/shapes/26.png" %}' alt=""></span>
+            <span class="fs-4 item-animateOne"><img src='{% static "assets/images/shapes/27.png" %}' alt=""></span>
+            <span class="fs-5 item-bounce"><img src='{% static "assets/images/shapes/3.png" %}' alt=""></span>
+            <span class="fs-6"><img src='{% static "assets/images/shapes/22.png" %}' alt=""></span>
+            <span class="fs-7"><img src='{% static "assets/images/shapes/30.png" %}' alt=""></span>
+        </div>
+        <div class="footer-top d-none d-md-block">
+            <div class="container">
+                <div class="row align-items-center justify-content-between padding-bottom-25">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="f-logo">
+                            <a href="{% url 'am' %}"> <img src='{% static "assets/images/logo/logo.png" %}' alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="f-title">
+                            <h4>Feel Hunger! Order Your<span> Like Food.</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="footer-bottom padding-top-22 padding-bottom-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 margin-bottom-20">
+                        <div class="widget">
+                            <h6>address</h6>
+                            <p>570 8th Ave,New York, NY 10018
+                                United States</p>
+                            <a href="#" class="f-link">view google map</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 margin-bottom-20">
+                        <div class="widget">
+                            <h6>book a table</h6>
+                            <p>Dogfood och Sliders foodtruck.
+                                Under Om oss kan ni läsa</p>
+                            <a href="#" class="f-link">make a call</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 margin-bottom-20">
+                        <div class="widget">
+                            <h6>opening hours</h6>
+                            <p><span>monday-friday: 8am - 4pm</span>
+                                <br><span>saturday: 9am - 5pm</span>
+                            </p>
+
+                            <a href="#" class="f-link">make a call</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 margin-bottom-20">
+                        <div class="widget">
+                            <h6>newsletter</h6>
+                            <div class="newsletter d-flex">
+                                <form action="#">
+                                    <input type="email" placeholder="enter your email"> <button type="submit"><i
+                                            class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            <a href="#" class="f-link">subscribe now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area text-center">
+            <p>Copyright © 2022 <a href="{% url 'am' %}">Khadyo</a></p>
+        </div>
+    </footer>
+
+    <!-- ToTop Button -->
+    <button class="scrollup"><i class="fas fa-angle-up"></i></button>
+
+    <!-- Javascript Files -->
+    <script src='{% static "assets/js/vendor/jquery-2.2.4.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/bootstrap.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/jquery.meanmenu.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/jquery.magnific-popup.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/slick.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/isotope.pkgd.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/counterup.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/jquery-ui.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/countdown.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/waypoints.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/easing.min.js" %}' ></script>
+    <script src='{% static "assets/js/vendor/wow.min.js" %}' ></script>
+    <script src='{% static "assets/js/main.js" %}' ></script>
+
+</body>
+
+
+<!-- Mirrored from html.softtechitltd.com/khadyo/khadyo/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Mar 2022 04:47:25 GMT -->
+</html>
